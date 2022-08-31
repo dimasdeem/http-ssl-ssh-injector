@@ -1,3 +1,58 @@
+HTTP-SSH-SSL-INJECTOR
+
+ termux + root 
+
+Download toolnya ngab
+
+https://codeload.github.com/abdoxfox/http-ssl-ssh-injector/zip/refs/heads/main
+
+extrack, teros ganti nama folder toolnya ngab biar mudah dipindahin ke termux
+
+example : ssh
+
+taro di /sdcard
+
+buka SSH terus edit redsocks.conf pakai editor text
+
+edit seperti di gambar dibawah, lalu save. Next
+
+Buka termux
+
+$ termux-setup-storage
+
+$ apt update && apt upgrade && pkg install root-repo
+
+$ apt install -y openssh sshpass netcat-openbsd corkscrew screen python3 tsu
+
+$ tsu
+
+# mv /sdcard/ssh $PWD
+
+# chmod +x -R ssh/*
+
+# cd ssh
+
+buat edit ssh dan payloadnya
+
+# nano *.ini
+
+lalu save
+
+ 
+
+Jalankan injectornya
+
+# ./*.sh
+
+close
+
+Ctrl +C
+
+y/n = n
+
+Source:
+
+github.com/abdoxfox/http-ssl-ssh-injector
 # updated 
 waiting for your opinions 
 
